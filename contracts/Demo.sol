@@ -2,7 +2,7 @@ pragma solidity ^0.4.17;
 
 contract Demo {
 
-    string public name = "Antonio";
+    string public name = 'Antonio';
 
     address public owner = msg.sender;
 
@@ -11,7 +11,7 @@ contract Demo {
         _;
     }
 
-    function setName(string _name) onlyOwner {
+    function setName(string _name) public onlyOwner {
         name = _name;
     }
 }
